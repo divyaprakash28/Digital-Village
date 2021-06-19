@@ -7,13 +7,23 @@
     box-shadow: 2px 2px 12px 2px rgb(136, 126, 126);
 }
 
+.hidden {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .margin {
         margin-top: 2vh;
         margin-right: 2vw;
         margin-left: 2vw;
         padding: 3vh;
-        /* border: 2px solid; */
-        box-shadow: 2px 2px 12px 2px rgb(136 126 126);
+        border: 2px solid;
+        box-shadow: none;
+    }
+}
+
+@media print {
+    #notprint {
+        visibility: hidden;
     }
 }

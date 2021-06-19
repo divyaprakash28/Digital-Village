@@ -13,20 +13,39 @@ app.get("/", function(req, res) {
 
 app.get("/praman", function(req, res) {
 
-    res.render("praman", { name: ".........", fname: ".............." });
+    res.render("praman", { name: ".........", fname: "..............", aay: " ", income: "", rupaye: " " });
 });
 
 app.post("/", function(req, res) {
     var name = req.body.name;
     var fname = req.body.fname;
     var pramantype = req.body.type;
-
-
     const today = new Date();
     const day = today.getDate(); // 24
     const month = today.getMonth(); // 10 (Month is 0-based, so 10 means 11th Month)
     const year = today.getFullYear();
-    res.render("praman", { name: name, fname: fname, jaati: "आहीर", upjaati: "आहीर", type: pramantype, day: day, month: month + 1, year: year });
+    if (pramantype === "आय प्रमाणपत्र") {
+        var income = req.body.income;
+        res.render("praman", { name: name, fname: fname, jaati: "अहीर ", upjaati: "अहीर ", aay: "तथा इनके माता पिता द्वारा होने वाली कुल वार्षिक आय ", rupaye: "रुपये है", type: pramantype, income: income, day: day, month: month + 1, year: year });
+    } else {
+        res.render("praman", {
+            name: name,
+            fname: fname,
+            jaati: "अहीर",
+            upjaati: "अहीर",
+            aay: " ",
+            income: " ",
+            rupaye: " ",
+            type: pramantype,
+            day: day,
+            month: month + 1,
+            year: year
+        });
+    }
+
+
+
+
 })
 
 let port = process.env.PORT;
