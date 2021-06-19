@@ -76,6 +76,25 @@
                                                 /* font-size: 1rem; */
                                             }
                                             
+                                            .main {
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            .div {
+                                                border: 2px solid#D62845;
+                                                border-radius: 2vh;
+                                                height: 20vh;
+                                                margin: 3vw;
+                                                display: flex;
+                                                align-items: center;
+                                                box-shadow: inset 0px .5px 2px .5px #D62845;
+                                            }
+                                            
+                                            .fontcolor {
+                                                text-decoration: none;
+                                                color: #D62845;
+                                            }
+                                            
                                             @media (max-width: 768px) {
                                                 .margin {
                                                     margin-top: 2vh;
