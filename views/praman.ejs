@@ -15,13 +15,14 @@
         <div class="row justify-content center">
             <div class="text-center">
                 <br>
-                <h1 class="text-center">प्रधान द्वारा प्रमाणित प्रमाण पत्र</h1><br>
-                <h3 class="text-center">प्रमाणपत्र का प्रकार :
-                    <%= type%>
-                </h3>
+                <p class="text-center heading">प्रधान द्वारा प्रमाणित प्रमाण पत्र</p><br>
+                <p class="text-center heading2">प्रमाणपत्र का प्रकार :
+                    <span class="pramantype"><%= type%></span>
+                </p>
                 <BR>
                 <BR>
-                <H3>प्रमाणित किया जाता है कि श्री
+                <p class="matter">
+                    प्रमाणित किया जाता है कि श्री
                     <%= name%> पुत्र/पुत्री श्री
                         <%= fname%> <br>
                             <BR>ग्राम भनूपुरा पोस्ट भारौल जिला फिरोज़ाबाद थाना सिरसागंज
@@ -39,24 +40,28 @@
 
 
 
-                </H3>
+                                                </H3>
             </div>
 
-            <div class="row">
+            <div class="row mohar">
 
                 <div class="col-1">
 
                 </div>
                 <div class="col-6">
-                    <h3>दिनांक :<br>
+                    <h3 id="date">दिनांक :<br>
                         <%=day%>/
                             <%=month%>/
                                 <%=year%>
                     </h3>
                 </div>
                 <div class="col-5">
-                    <h3> प्रधान : शिवराज सिंह <br>ग्राम भनूपुरा</h3>
+                    <h3>हस्ताक्षर एवं मोहर</h3>
+                    <h3 id="pradhan">
+                        प्रधान : शिवराज सिंह <br>ग्राम भनूपुरा</h3>
                 </div>
+
+                </p>
             </div><br><br><br><br>
             <div class="text-center" id="notprint"><button class="btn btn-primary" onclick="window.print()">Print Certificate</button></div>
 
