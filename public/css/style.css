@@ -1,0 +1,8 @@
+.margin {
+    margin-top: 10vh;
+    margin-right: 25vh;
+    margin-left: 25vh;
+    padding: 3vh;
+    /* border: 2px solid; */
+    box-shadow: 2px 2px 12px 2px rgb(136, 126, 126);
+}

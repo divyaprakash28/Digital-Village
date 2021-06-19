@@ -19,11 +19,14 @@ app.get("/praman", function(req, res) {
 app.post("/", function(req, res) {
     var name = req.body.name;
     var fname = req.body.fname;
+    var pramantype = req.body.type;
+
+
     const today = new Date();
     const day = today.getDate(); // 24
     const month = today.getMonth(); // 10 (Month is 0-based, so 10 means 11th Month)
     const year = today.getFullYear();
-    res.render("praman", { name: name, fname: fname, jaati: "आहीर", upjaati: "आहीर", day: day, month: month, year: year });
+    res.render("praman", { name: name, fname: fname, jaati: "आहीर", upjaati: "आहीर", type: pramantype, day: day, month: month + 1, year: year });
 })
 
 let port = process.env.PORT;

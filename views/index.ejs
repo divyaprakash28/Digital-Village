@@ -22,9 +22,21 @@
     <br>
     <section>
         <div class="row justify-content-center">
-            <div class="col-4">
+            <div class="col-lg-4">
 
-                <form action="/" method="POST">
+                <form action="/" method="POST" class="mx-4 my-3">
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">प्रमाणपत्र का प्रकार : </label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01" name="type">
+                          <option selected>Choose...</option>
+                          <option value="आय प्रमाणपत्र">आय प्रमाणपत्र </option>
+                          <option value="जाती प्रमाणपत्र">जाती प्रमाणपत्र</option>
+                          <option value="मूल निवास प्रमाणपत्र">मूल निवास प्रमाणपत्र </option>
+                        </select>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Name</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" name="name">
