@@ -1,0 +1,66 @@
+<%- include("partials/header"); -%>
+
+    <br>
+
+    <h1>
+        <p class="text-center">GENERATE CERTIFICATE</p>
+    </h1>
+    <h2>
+        <p class="text-center">ग्राम प्रधान द्वारा प्रमाण पत्र निर्माण पोर्टल (ग्राम भनुपुरा)</p>
+    </h2>
+    <br>
+    <br>
+    <section>
+        <div class="row justify-content-center">
+
+            <div class="col-lg-4">
+
+                <form action="/" method="POST" class="mx-4 my-3">
+
+                    <div class="input-group mb-3">
+
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">प्रमाणपत्र का प्रकार : </label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01" name="type" onchange="changeStatus()">
+                           
+                          <option selected>Choose...</option>
+                          <option value="मूल निवास प्रमाणपत्र">मूल निवास प्रमाणपत्र </option>
+                          
+                          <option value="जाती प्रमाणपत्र">जाती प्रमाणपत्र</option>
+                          <option value="आय प्रमाणपत्र">आय प्रमाणपत्र </option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">प्रार्थी का नाम (हिंदी में भरे )</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="fname" class="form-label">प्रार्थी के पिता का नाम (हिंदी में भरे )</label>
+                        <input type="text" class="form-control" name="fname" id="fname" required>
+                    </div>
+                    <div class="mb-3 hidden">
+                        <label for="income" class="form-label">आय सभी स्रोतों द्वारा</label>
+                        <input type="number" class="form-control" name="income" id="income">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <%- include("partials/footer"); -%>
+        <script>
+            function changeStatus() {
+                var x = document.getElementById("inputGroupSelect01");
+                if (x.value === "आय प्रमाणपत्र") {
+                    document.querySelector(".hidden").style.display = 'block';
+                } else {
+                    document.querySelector(".hidden").style.display = 'none';
+                }
+            }
+        </script>

@@ -41,6 +41,40 @@
                                             #date {
                                                 font-weight: 700;
                                             }
+                                            /* used for letterpad */
+                                            
+                                            .marginletter {
+                                                margin-top: 10vh;
+                                                margin-bottom: 10vh;
+                                                margin-right: 25vh;
+                                                margin-left: 25vh;
+                                                box-shadow: 2px 2px 12px 2px rgb(136, 126, 126);
+                                                border: 3px double;
+                                            }
+                                            
+                                            .img {
+                                                width: 10vh;
+                                                height: 10vh;
+                                            }
+                                            
+                                            .top {
+                                                padding: 1.5vh 2vh 1.5vh 2vh;
+                                                border-bottom: 2px dashed;
+                                            }
+                                            
+                                            .matterletter {
+                                                padding: 4vh;
+                                            }
+                                            
+                                            .bold {
+                                                font-weight: 600;
+                                                color: red;
+                                            }
+                                            
+                                            .name {
+                                                color: rgb(17 93 50);
+                                                /* font-size: 1rem; */
+                                            }
                                             
                                             @media (max-width: 768px) {
                                                 .margin {
@@ -49,6 +83,14 @@
                                                     margin-left: 2vw;
                                                     margin-bottom: 2vh;
                                                     padding: 3vh;
+                                                    /* border: 2px solid; */
+                                                    box-shadow: 2px 2px 12px 2px rgb(136, 126, 126);
+                                                }
+                                                .marginletter {
+                                                    margin-top: 2vh;
+                                                    margin-right: 2vw;
+                                                    margin-left: 2vw;
+                                                    margin-bottom: 2vh;
                                                     /* border: 2px solid; */
                                                     box-shadow: 2px 2px 12px 2px rgb(136, 126, 126);
                                                 }
@@ -62,10 +104,23 @@
                                                 .matter {
                                                     font-size: 1.2rem;
                                                 }
+                                                .matterletter {
+                                                    padding: .5vh 1vh 1vh 1vh;
+                                                }
                                                 #pradhan,
                                                 #sign,
                                                 #date {
                                                     font-size: 1.2rem;
+                                                }
+                                                .paddingpatrank {
+                                                    padding-left: 5vh;
+                                                }
+                                                .img {
+                                                    width: 5vh;
+                                                    height: 5vh;
+                                                }
+                                                .name {
+                                                    font-size: 1rem;
                                                 }
                                             }
                                             
@@ -77,6 +132,10 @@
                                                     border: 3px double;
                                                     box-shadow: none;
                                                 }
+                                                .marginletter {
+                                                    box-shadow: none;
+                                                    height: 95vh;
+                                                }
                                                 .heading {
                                                     font-size: 2.7rem;
                                                     font-weight: 600;
@@ -87,9 +146,19 @@
                                                 .matter {
                                                     font-size: 1.2rem;
                                                 }
+                                                .mt-3 {
+                                                    margin-top: 1vh;
+                                                }
+                                                .matterletter {
+                                                    height: 50vh;
+                                                    padding: .5vh 2vh 1vh 2vh;
+                                                }
                                                 #pradhan,
                                                 #sign,
                                                 #date {
+                                                    font-size: 1.5rem;
+                                                }
+                                                .name {
                                                     font-size: 1.5rem;
                                                 }
                                             }
