@@ -99,6 +99,15 @@
                         min-width: 10px;
                     }
                     
+                    @media (max-width: 768px) {
+                        .marginresume {
+                            margin-top: 10vh;
+                            margin-bottom: 10vh;
+                            margin-right: 2vh;
+                            margin-left: 2vh;
+                        }
+                    }
+                    
                     @media print {
                         .marginresume {
                             margin-top: 0mm;
