@@ -46,6 +46,59 @@
                         font-size: 2.3rem;
                     }
                     
+                    .heading {
+                        color: rgb(79 78 78);
+                        font-size: 15px;
+                        font-weight: 500;
+                        font-family: fantasy;
+                        letter-spacing: 1px;
+                    }
+                    
+                    .headinginput {
+                        color: rgb(79 78 78);
+                        font-size: 15px;
+                        font-weight: 500;
+                        font-family: fantasy;
+                        letter-spacing: 1px;
+                        border: none;
+                    }
+                    
+                    .headinginputright {
+                        color: rgb(79 78 78);
+                        font-size: 15px;
+                        font-weight: 500;
+                        font-family: fantasy;
+                        letter-spacing: 1px;
+                        border: none;
+                        margin-bottom: 0px;
+                    }
+                    
+                    .detailheading {
+                        color: #c01e88;
+                        font-size: 14px;
+                        font-weight: 500;
+                        font-family: inherit;
+                        margin-bottom: 0px;
+                    }
+                    
+                    .input {
+                        border: 1px solid;
+                        color: gray;
+                        font-size: 12px;
+                        width: 100%;
+                    }
+                    
+                    .rightside {
+                        padding-left: 50px;
+                    }
+                    
+                    .points {
+                        border: none;
+                        color: gray;
+                        font-size: 12px;
+                        min-width: 10px;
+                    }
+                    
                     @media print {
                         .marginresume {
                             margin-top: 0mm;
@@ -53,5 +106,8 @@
                             margin-right: auto;
                             margin-left: auto;
                             box-shadow: none;
+                        }
+                        .input {
+                            border: none;
                         }
                     }
