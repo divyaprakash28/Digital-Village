@@ -16,15 +16,12 @@ app.get("/", function(req, res) {
     res.render("index");
 })
 
-app.post("/letterpad", function(req, res) {
-    var post = req.body.post;
-    res.render("letterpad", { post: post, day: day, month: month + 1, year: year });
+app.get("/letterpad", function(req, res) {
+
+    res.render("letterpad", { day: day, month: month + 1, year: year });
 })
 
-app.get("/compose", function(req, res) {
-    var post = req.body.postBody;
-    res.render("compose");
-})
+
 app.get("/main", function(req, res) {
     var post = req.body.postBody;
     res.render("main");

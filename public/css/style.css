@@ -87,12 +87,38 @@
                                                 margin: 3vw;
                                                 display: flex;
                                                 align-items: center;
+                                                justify-content: center;
                                                 box-shadow: inset 0px .5px 2px .5px #D62845;
                                             }
                                             
                                             .fontcolor {
                                                 text-decoration: none;
                                                 color: #D62845;
+                                            }
+                                            
+                                            .form-controlcustom {
+                                                display: block;
+                                                width: 100%;
+                                                padding: .375rem .75rem;
+                                                font-size: 1rem;
+                                                font-weight: 400;
+                                                line-height: 1.5;
+                                                color: #212529;
+                                                background-color: #fff;
+                                                background-clip: padding-box;
+                                                border: 1px solid #ffffff;
+                                                -webkit-appearance: none;
+                                                -moz-appearance: none;
+                                                appearance: none;
+                                                border-radius: .25rem;
+                                                height: 55vh;
+                                                transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                            }
+                                            
+                                            .belowhead,
+                                            .top,
+                                            .below {
+                                                display: none;
                                             }
                                             
                                             @media (max-width: 768px) {
@@ -123,8 +149,8 @@
                                                 .matter {
                                                     font-size: 1.2rem;
                                                 }
-                                                .matterletter {
-                                                    height: 45vh;
+                                                .form-controlcustom {
+                                                    height: 65vh;
                                                     padding: .5vh 1vh 1vh 1vh;
                                                 }
                                                 #pradhan,
@@ -141,6 +167,14 @@
                                                 }
                                                 .name {
                                                     font-size: 1rem;
+                                                }
+                                                .belowhead,
+                                                .top,
+                                                .below {
+                                                    display: none;
+                                                }
+                                                .hiddenheading {
+                                                    display: block;
                                                 }
                                             }
                                             
@@ -169,7 +203,7 @@
                                                 .mt-3 {
                                                     margin-top: 1vh;
                                                 }
-                                                .matterletter {
+                                                .form-controlcustom {
                                                     height: 45vh;
                                                     padding: .5vh 2vh 1vh 2vh;
                                                 }
@@ -179,5 +213,13 @@
                                                 }
                                                 .name {
                                                     font-size: 1.2rem;
+                                                }
+                                                .belowhead,
+                                                .top,
+                                                .below {
+                                                    display: block;
+                                                }
+                                                .hiddenheading {
+                                                    display: none;
                                                 }
                                             }
