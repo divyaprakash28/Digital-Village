@@ -17,7 +17,8 @@
         <section class="resumebody">
             <div class="row mt-5">
                 <div class="col-3">
-                    <div><img class="imgresume" src="img/dp.jpeg"></div>
+                    <div><img id="myImg" class="imgresume" src="#"></div>
+                    <input type="file" id="notprint">
                 </div>
                 <div class="col-9">
                     <section>
@@ -170,3 +171,23 @@
     </section>
 
     <div class="text-center mb-5 mt-3" id="notprint"><button class="btn btn-primary" onclick="window.print()">Print Resume</button></div>
+
+</body>
+
+</html>
+
+
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('input[type="file"]').addEventListener('change', function() {
+            if (this.files && this.files[0]) {
+                var img = document.getElementById('myImg');
+                img.onload = () => {
+                    URL.revokeObjectURL(img.src); // no longer needed, free memory
+                }
+
+                img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+            }
+        });
+    });
+</script>
