@@ -100,7 +100,7 @@
                                                 display: block;
                                                 width: 100%;
                                                 padding: .375rem .75rem;
-                                                font-size: 1rem;
+                                                font-size: 0.8rem;
                                                 font-weight: 400;
                                                 line-height: 1.5;
                                                 color: #212529;
@@ -205,7 +205,7 @@
                                                 }
                                                 .form-controlcustom {
                                                     height: 45vh;
-                                                    padding: .5vh 2vh 1vh 2vh;
+                                                    padding: 1vh 2vh 1vh 2vh;
                                                 }
                                                 #pradhan,
                                                 #sign {
