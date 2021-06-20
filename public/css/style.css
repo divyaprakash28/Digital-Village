@@ -62,10 +62,6 @@
                                                 border-bottom: 2px dashed;
                                             }
                                             
-                                            .matterletter {
-                                                padding: 4vh;
-                                            }
-                                            
                                             .bold {
                                                 font-weight: 600;
                                                 color: red;
@@ -187,6 +183,10 @@
                                                     box-shadow: none;
                                                 }
                                                 .marginletter {
+                                                    margin-top: 0mm;
+                                                    margin-right: 10mm;
+                                                    margin-left: 10mm;
+                                                    margin-bottom: 0mm;
                                                     box-shadow: none;
                                                     /* height: 95vh; */
                                                 }
@@ -204,7 +204,7 @@
                                                     margin-top: 1vh;
                                                 }
                                                 .form-controlcustom {
-                                                    height: 45vh;
+                                                    height: 120mm;
                                                     padding: 1vh 2vh 1vh 2vh;
                                                 }
                                                 #pradhan,
