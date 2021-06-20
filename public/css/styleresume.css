@@ -109,6 +109,9 @@
                     }
                     
                     @media print {
+                        .resumebody {
+                            padding-top: 0mm;
+                        }
                         .marginresume {
                             margin-top: 0mm;
                             margin-bottom: 0mm;
@@ -118,5 +121,8 @@
                         }
                         .input {
                             border: none;
+                        }
+                        #notprint {
+                            display: none;
                         }
                     }
