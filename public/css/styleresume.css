@@ -99,6 +99,10 @@
                         min-width: 10px;
                     }
                     
+                    .hidden {
+                        display: none;
+                    }
+                    
                     @media (max-width: 768px) {
                         .marginresume {
                             margin-top: 10vh;
