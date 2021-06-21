@@ -129,4 +129,7 @@
                         #notprint {
                             display: none;
                         }
+                        .notprint {
+                            display: none;
+                        }
                     }
