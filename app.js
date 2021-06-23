@@ -13,7 +13,7 @@ const month = today.getMonth(); // 10 (Month is 0-based, so 10 means 11th Month)
 const year = today.getFullYear();
 
 app.get("/", function(req, res) {
-    res.render("index");
+    res.render("index", { heading: "ग्राम प्रधान द्वारा प्रमाण पत्र निर्माण पोर्टल ", headingbelow: "(ग्राम भनुपुरा)" });
 })
 app.get("/resume", function(req, res) {
     res.render("resume");
@@ -21,13 +21,13 @@ app.get("/resume", function(req, res) {
 
 app.get("/letterpad", function(req, res) {
 
-    res.render("letterpad", { day: day, month: month + 1, year: year });
+    res.render("letterpad", { day: day, month: month + 1, year: year, heading: "ग्राम प्रधान पोर्टल (ग्राम भनुपुरा)", headingbelow: "लेटरपैड पर लिखें " });
 })
 
 
 app.get("/main", function(req, res) {
     var post = req.body.postBody;
-    res.render("main");
+    res.render("main", { headingbelow: "प्रधान द्वारा प्रमाणित प्रमाण पत्र", heading: "ग्राम प्रधान पोर्टल (ग्राम भनुपुरा)" });
 })
 
 app.get("/praman", function(req, res) {

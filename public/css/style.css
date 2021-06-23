@@ -84,7 +84,7 @@
                                             /* used for letterpad */
                                             
                                             .marginletter {
-                                                margin-top: 10vh;
+                                                /* margin-top: 10vh; */
                                                 margin-bottom: 10vh;
                                                 margin-right: 25vh;
                                                 margin-left: 25vh;
@@ -174,11 +174,18 @@
                                                     margin-left: 0vw;
                                                     margin-bottom: 2vh;
                                                     padding: 3vh;
-                                                    padding-top: 48vw;
+                                                    padding-top: 60vw;
                                                     padding-bottom: 10vh;
                                                     /* border: 2px solid; */
                                                     box-shadow: none;
                                                 }
+                                                .padding {
+                                                    padding: 0;
+                                                    padding-top: 60vw;
+                                                }
+                                                /* .top {
+                                                    margin-top: 50vw;
+                                                } */
                                                 .head {
                                                     margin-top: 0vh;
                                                     margin-bottom: 0vh;
@@ -224,7 +231,7 @@
                                                     height: 20vw;
                                                 }
                                                 .marginletter {
-                                                    margin-top: 0mm;
+                                                    /* margin-top: 60vw; */
                                                     margin-right: 2vw;
                                                     margin-left: 2vw;
                                                     margin-bottom: 2vh;
@@ -267,6 +274,7 @@
                                                 }
                                                 .hiddenheading {
                                                     display: block;
+                                                    margin-top: 50vw;
                                                 }
                                             }
                                             
