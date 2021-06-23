@@ -8,6 +8,21 @@
                                                 box-shadow: 2px 2px 12px 2px rgb(136, 126, 126);
                                             }
                                             
+                                            .head {
+                                                margin-top: 10vh;
+                                                margin-bottom: 10vh;
+                                                margin-right: 25vh;
+                                                margin-left: 25vh;
+                                                padding: 5vh;
+                                                /* border: 2px solid; */
+                                                box-shadow: 2px 2px 12px 2px rgb(136, 126, 126);
+                                                background-image: linear-gradient( 45deg, #d3294a, #8a3981);
+                                            }
+                                            
+                                            .welcome {
+                                                color: #dec2cc;
+                                            }
+                                            
                                             .bgcolor {
                                                 background: linear-gradient(#e66465, #9198e5);
                                             }
@@ -16,6 +31,20 @@
                                                 font-size: 3.5rem;
                                                 font-weight: 600;
                                             }
+                                            /* .MuiAppBar-positionFixed {
+                                                top: 0;
+                                                left: auto;
+                                                right: 0;
+                                                
+                                            } */
+                                            /* .MuiPaper-elevation4 {
+                                                box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+                                            } */
+                                            /* .MuiPaper-root {
+                                                color: rgba(0, 0, 0, 0.87);
+                                                transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+                                                background-color: #fff;
+                                            } */
                                             
                                             .heading2 {
                                                 font-size: 2.5rem;
@@ -82,8 +111,8 @@
                                             
                                             .div {
                                                 border: 2px solid#D62845;
-                                                border-radius: 2vh;
-                                                height: 20vh;
+                                                border-radius: 4vh;
+                                                height: 22vh;
                                                 margin: 3vw;
                                                 display: flex;
                                                 align-items: center;
@@ -133,13 +162,53 @@
                                             
                                             @media (max-width: 768px) {
                                                 .margin {
-                                                    margin-top: 2vh;
-                                                    margin-right: 2vw;
-                                                    margin-left: 2vw;
+                                                    margin-top: 0vh;
+                                                    margin-right: 0vw;
+                                                    margin-left: 0vw;
                                                     margin-bottom: 2vh;
                                                     padding: 3vh;
+                                                    padding-top: 60vw;
+                                                    padding-bottom: 10vh;
                                                     /* border: 2px solid; */
-                                                    box-shadow: 2px 2px 12px 2px rgb(136, 126, 126);
+                                                    box-shadow: none;
+                                                }
+                                                .head {
+                                                    margin-top: 0vh;
+                                                    margin-bottom: 0vh;
+                                                    margin-right: 0vh;
+                                                    margin-left: 0vh;
+                                                    background-position: bottom;
+                                                    background-image: url(/img/ellipse.png);
+                                                    height: 35vh;
+                                                    padding: 3vh;
+                                                    /* background-position-x: -9px; */
+                                                    position: fixed;
+                                                    width: 100%;
+                                                    background-repeat: no-repeat;
+                                                    box-shadow: none;
+                                                    background-size: 80vh;
+                                                }
+                                                .imghead {
+                                                    margin-top: 0vh;
+                                                }
+                                                .imgheadimg {
+                                                    height: 21vw;
+                                                }
+                                                .jss61 {
+                                                    top: auto;
+                                                    color: #fff;
+                                                    bottom: 0;
+                                                    height: 70px;
+                                                    display: flex;
+                                                    padding: 10px;
+                                                    font-size: 22px;
+                                                    align-items: center;
+                                                    font-weight: bold;
+                                                    text-transform: none;
+                                                    justify-content: center;
+                                                    background-image: linear-gradient( 45deg, #d3294a, #8a3981);
+                                                    position: fixed;
+                                                    width: 100%;
                                                 }
                                                 .imgresume {
                                                     border: 2px solid#D62845;
