@@ -20,12 +20,12 @@
                                             }
                                             
                                             .welcome {
-                                                font-size: .8rem;
+                                                font-size: 1.0rem;
                                                 color: #dec2cc;
                                             }
                                             
                                             .welcomebelow {
-                                                font-size: .9rem;
+                                                font-size: 1.2rem;
                                                 color: #dec2cc;
                                                 margin-bottom: 0px;
                                             }
@@ -174,7 +174,7 @@
                                                     margin-left: 0vw;
                                                     margin-bottom: 0vh;
                                                     padding: 3vh;
-                                                    padding-top: 25vw;
+                                                    padding-top: 35vw;
                                                     padding-bottom: 10vh;
                                                     /* border: 2px solid; */
                                                     box-shadow: none;
@@ -185,7 +185,7 @@
                                                     margin-left: 0vw;
                                                     margin-bottom: 0vh;
                                                     padding: 3vh;
-                                                    padding-top: 51vw;
+                                                    padding-top: 56vw;
                                                     padding-bottom: 10vh;
                                                     /* border: 2px solid; */
                                                     box-shadow: none;
@@ -196,7 +196,7 @@
                                                     color: white;
                                                 }
                                                 .lettertop {
-                                                    padding-top: 48vw;
+                                                    padding-top: 55vw;
                                                     padding-bottom: 10vh;
                                                 }
                                                 /* .lettertop {
@@ -217,7 +217,7 @@
                                                     margin-left: 0vh;
                                                     background-position: bottom;
                                                     background-image: url(/img/ellipse.png);
-                                                    height: 40vw;
+                                                    height: 50vw;
                                                     padding: 3vh;
                                                     /* background-position-x: -9px; */
                                                     position: fixed;
@@ -230,7 +230,7 @@
                                                     margin-top: 0vh;
                                                 }
                                                 .imgheadimg {
-                                                    height: 11vw;
+                                                    height: 16vw;
                                                 }
                                                 .jss61 {
                                                     top: auto;
