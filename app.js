@@ -44,7 +44,7 @@ app.post("/", function(req, res) {
 
     if (pramantype === "आय प्रमाणपत्र") {
         var income = req.body.income;
-        res.render("praman", { name: name, fname: fname, jaati: "अहीर ", upjaati: "अहीर ", aay: "तथा इनके माता पिता द्वारा होने वाली कुल वार्षिक आय ₹", rupaye: " है", type: pramantype, income: income, day: day, month: month + 1, year: year });
+        res.render("praman", { name: name, fname: fname, jaati: "अहीर ", upjaati: "अहीर ", aay: "तथा इनके माता पिता द्वारा होने वाली कुल वार्षिक आय ₹", rupaye: " है", type: pramantype, income: income, day: day, month: month + 1, year: year, headingbelow: "", heading: "प्रधान द्वारा प्रमाणित प्रमाण पत्र" });
     } else {
         res.render("praman", {
             name: name,
@@ -57,7 +57,9 @@ app.post("/", function(req, res) {
             type: pramantype,
             day: day,
             month: month + 1,
-            year: year
+            year: year,
+            headingbelow: "",
+            heading: "प्रधान द्वारा प्रमाणित प्रमाण पत्र"
         });
     }
 

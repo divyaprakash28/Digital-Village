@@ -1,11 +1,11 @@
 <%- include("partials/header"); -%>
 
 
-    <section class="margin">
+    <section class="margin padding">
         <div class="row justify-content center">
             <div class="text-center">
                 <br>
-                <!-- <p class="text-center heading">प्रधान द्वारा प्रमाणित प्रमाण पत्र</p><br> -->
+                <p class="text-center heading">प्रधान द्वारा प्रमाणित प्रमाण पत्र</p><br>
                 <p class="text-center heading2">प्रमाणपत्र का प्रकार :
                     <span class="pramantype"><%= type%></span>
                 </p>
@@ -53,10 +53,15 @@
 
                 </p>
             </div><br><br><br><br>
-            <div class="text-center" id="notprint"><button class="btn btn-primary" onclick="window.print()">Print Certificate</button></div>
+
 
         </div>
 
     </section>
+    <div class="text-center">
+        <header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorInherit jss61 mui-fixed MuiPaper-elevation4 text-center hiddenheader">
+            <div class="text-center" id="notprint"><button class="btnprint" onclick="window.print()">Print Certificate</button></div>
+        </header>
+    </div>
 
     <%- include("partials/footer"); -%>

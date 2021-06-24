@@ -20,12 +20,12 @@
                                             }
                                             
                                             .welcome {
-                                                font-size: 1.2rem;
+                                                font-size: .8rem;
                                                 color: #dec2cc;
                                             }
                                             
                                             .welcomebelow {
-                                                font-size: 1.2rem;
+                                                font-size: .9rem;
                                                 color: #dec2cc;
                                                 margin-bottom: 0px;
                                             }
@@ -174,14 +174,27 @@
                                                     margin-left: 0vw;
                                                     margin-bottom: 2vh;
                                                     padding: 3vh;
-                                                    padding-top: 60vw;
+                                                    padding-top: 25vw;
                                                     padding-bottom: 10vh;
                                                     /* border: 2px solid; */
                                                     box-shadow: none;
                                                 }
+                                                .btnprint {
+                                                    border: none;
+                                                    background: none;
+                                                    color: white;
+                                                }
+                                                .lettertop {
+                                                    padding-top: 48vw;
+                                                    padding-bottom: 10vh;
+                                                }
+                                                /* .lettertop {
+                                                    padding-top: 60vw;
+                                                } */
                                                 .padding {
                                                     padding: 0;
-                                                    padding-top: 60vw;
+                                                    padding-top: 50vw;
+                                                    padding-bottom: 10vh;
                                                 }
                                                 /* .top {
                                                     margin-top: 50vw;
@@ -193,7 +206,7 @@
                                                     margin-left: 0vh;
                                                     background-position: bottom;
                                                     background-image: url(/img/ellipse.png);
-                                                    height: 57vw;
+                                                    height: 40vw;
                                                     padding: 3vh;
                                                     /* background-position-x: -9px; */
                                                     position: fixed;
@@ -206,7 +219,7 @@
                                                     margin-top: 0vh;
                                                 }
                                                 .imgheadimg {
-                                                    height: 21vw;
+                                                    height: 11vw;
                                                 }
                                                 .jss61 {
                                                     top: auto;
@@ -279,12 +292,19 @@
                                             }
                                             
                                             @media print {
+                                                .hiddenheader {
+                                                    display: none;
+                                                }
                                                 #notprint {
                                                     display: none;
+                                                }
+                                                .lettertop {
+                                                    padding-top: 0vw;
                                                 }
                                                 .margin {
                                                     border: 3px double;
                                                     box-shadow: none;
+                                                    padding-top: 3vh;
                                                 }
                                                 .marginletter {
                                                     margin-top: 0mm;
