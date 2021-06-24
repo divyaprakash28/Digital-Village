@@ -172,9 +172,20 @@
                                                     margin-top: 0vh;
                                                     margin-right: 0vw;
                                                     margin-left: 0vw;
-                                                    margin-bottom: 2vh;
+                                                    margin-bottom: 0vh;
                                                     padding: 3vh;
                                                     padding-top: 25vw;
+                                                    padding-bottom: 10vh;
+                                                    /* border: 2px solid; */
+                                                    box-shadow: none;
+                                                }
+                                                .marginnew {
+                                                    margin-top: 0vh;
+                                                    margin-right: 0vw;
+                                                    margin-left: 0vw;
+                                                    margin-bottom: 0vh;
+                                                    padding: 3vh;
+                                                    padding-top: 51vw;
                                                     padding-bottom: 10vh;
                                                     /* border: 2px solid; */
                                                     box-shadow: none;
