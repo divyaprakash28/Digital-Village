@@ -75,7 +75,7 @@
                     
                     .detailheading {
                         color: #c01e88;
-                        font-size: 14px;
+                        font-size: 16px;
                         font-weight: 500;
                         font-family: inherit;
                         margin-bottom: 0px;
@@ -84,7 +84,7 @@
                     .input {
                         border: 1px solid;
                         color: gray;
-                        font-size: 12px;
+                        font-size: 14px;
                         width: 100%;
                     }
                     
