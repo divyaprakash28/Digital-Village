@@ -10,7 +10,7 @@
 
 
     </section> -->
-    <section class="margin">
+    <section class="margin" style="padding-top: 35vw; transition: all 0.5s ease-in-out;">
         <br>
 
 
@@ -47,13 +47,14 @@
     </section>
 
     <div class="text-center popup">
-        <header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorInherit jss61 mui-fixed MuiPaper-elevation4 text-center hiddenheader" style="height:60px;">Contact Us<a href="tel:6395980289" style="text-decoration: none;"><button class="btn btn-success call mt-5" style="display: none; font-size: 2rem;">Call Pradhan Ji</button></a></header>
+        <header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorInherit jss61 mui-fixed MuiPaper-elevation4 text-center hiddenheader" style="height:60px;">Contact Us<a href="tel:6395980289" style="text-decoration: none;"><button class="btn btn-success call mt-5" style="display: none; font-size: 2rem; border-radius: 2rem;">Call Pradhan Ji</button></a></header>
     </div>
     <div class="d-flex justify-content-center">Hello</div>
     <script>
         let contact = document.getElementsByClassName("jss61")[0]
         let call = document.getElementsByClassName("call")[0]
-            // let call1 = document.getElementsByClassName("call1")[0]
+        let margin = document.getElementsByClassName("margin")[0]
+        let head = document.getElementsByClassName("head")[0]
         console.log("hello")
 
         contact.addEventListener("click", () => {
@@ -61,12 +62,15 @@
             if (contact.style.height == "60px") {
                 contact.style.height = "50vh";
                 call.style.display = "block"
-                    // call1.style.display = "block"
+                margin.style.paddingTop = "45vw"
+                head.style.marginTop = "5vh"
 
             } else {
                 contact.style.height = "60px"
                 call.style.display = "none"
-                    // call1.style.display = "none"
+                margin.style.paddingTop = "35vw"
+                head.style.marginTop = "0vh"
+
             }
         })
     </script>
